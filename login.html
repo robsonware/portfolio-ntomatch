@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	
+	<title>NTO Match</title>
+
+	<link href="css/icones.css" rel="stylesheet">
+	<link href="css/auth.css" rel="stylesheet">
+	<script src="js/app.js"></script>
+
+</head>
+
+<body class="text-center">
+
+	
+<form class="form-auth" method="POST" action="http://localhost:8000/login">
+	<input type="hidden" name="_token" value="Q8VtGJvcAcUPoS7tgrXzK46CB46gk3iv6QIkNaq1">
+	<span class="oi oi-account-login display-4" title="Login" aria-hidden="true"></span>
+	<h1 class="h3 mb-3 font-weight-normal">Entrar na plataforma</h1>
+
+	<label for="email" class="sr-only">Email</label>
+	<input name="email" id="email" type="email" class="form-control mb-1 " value="" placeholder="Email" autocomplete="email" required="" autofocus="">
+	
+	<label for="senha" class="sr-only">Senha</label>
+	<input name="password" id="senha" type="password" class="form-control mb-3 " placeholder="Senha" required="">
+	
+	<div class="checkbox mb-3">
+		<div class="custom-control custom-checkbox">
+			<input name="lembrar" id="lembrar" type="checkbox" class="custom-control-input">
+			<label class="custom-control-label" for="lembrar">Lembrar de mim</label>
+		</div>
+	</div>
+	
+	<button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+
+	<p class="mt-4 mb-3 text-muted">
+		<a href="register.html" class="text-decoration-none text-dark">Primeiro acesso</a> • 
+		<a href="password/reset.html" class="text-decoration-none text-dark">Esqueci a senha</a>
+	</p>
+</form>
+
+
+</body>
+</html>
